@@ -1,0 +1,429 @@
+/* Common styles for the website */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 1rem 0;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+header .logo-img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+nav {
+    position: relative;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-left: 2rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f4f4f4;
+}
+
+main {
+    padding: 2rem;
+    min-height: 100vh;
+    background: linear-gradient(to right, #000, #333);
+    color: #fff;
+}
+
+.hero {
+    background: url('images/hero.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 5rem 2rem;
+    border-radius: 10px;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.hero .btn {
+    margin-top: 2rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #333;
+}
+
+.intro {
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.intro h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.intro p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+.cta-section {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 3rem 2rem;
+    border-radius: 10px;
+    margin: 3rem 0;
+}
+
+.cta-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.cta-section .btn {
+    padding: 0.75rem 1.5rem;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.cta-section .btn:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.team-section {
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.team-section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.team-pyramid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 0.5rem;
+    width: 200px;
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #ddd;
+}
+
+.team-member .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.team-member:hover .overlay {
+    opacity: 1;
+}
+
+.team-member h3 {
+    font-size: 1.2rem;
+    margin: 1rem 0 0.5rem 0;
+}
+
+.team-member p {
+    font-size: 0.9rem;
+    margin: 0 0 1rem 0;
+}
+
+.partners-section {
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.partners-section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.partners {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.partner {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 0.5rem;
+    width: 200px;
+}
+
+.partner img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #ddd;
+}
+
+.partner .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.partner:hover .overlay {
+    opacity: 1;
+}
+
+.partner p {
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    width: 100%;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Styles for gallery section */
+.gallery-section {
+    margin: 3rem 0;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.gallery-item img, .gallery-item video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.gallery-item:hover img, .gallery-item:hover video {
+    transform: scale(1.1);
+    filter: brightness(70%);
+}
+
+.gallery-item .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.gallery-item:hover .overlay {
+    opacity: 1;
+}
+
+/* Styles for events section */
+.events-section {
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.events-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.events-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.events-table th, .events-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.events-table th {
+    background-color: #f2f2f2;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        background-color: #000;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .intro h2,
+    .cta-section h2,
+    .team-section h2,
+    .partners-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .intro p,
+    .cta-section .btn,
+    .team-member h3,
+    .team-member p,
+    .partner p {
+        font-size: 0.9rem;
+    }
+
+    .hero .btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .cta-section .btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    .intro,
+    .cta-section,
+    .team-section,
+    .partners-section {
+        margin: 2rem 0;
+    }
+
+    .team-member {
+        width: 150px;
+        margin: 0.25rem;
+    }
+
+    .partner {
+        width: 150px;
+        margin: 0.25rem;
+    }
+}
